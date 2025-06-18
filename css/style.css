@@ -1215,7 +1215,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 /* Slider
 ================================================== */
 /*-- Main slide --*/
-.banner-carousel .banner-carousel-item {
+/* .banner-carousel .banner-carousel-item {
   height: 700px;
   color: #fff;
   background-position: 50% 50%;
@@ -1230,7 +1230,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   .banner-carousel .banner-carousel-item {
     height: 450px;
   }
-}
+} */
 
 .slider-content {
   position: relative;

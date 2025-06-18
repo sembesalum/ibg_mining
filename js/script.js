@@ -250,6 +250,7 @@ jQuery(function ($) {
 		}
 		teamCarousel();
 
+		
 
 		// media popup
 		function mediaPopup() {
@@ -270,3 +271,24 @@ jQuery(function ($) {
 
 
 });
+
+function initMap() {
+	const mapElement = document.getElementById('map');
+	const latitude = parseFloat(mapElement.getAttribute('data-latitude'));
+	const longitude = parseFloat(mapElement.getAttribute('data-longitude'));
+	const markerImage = mapElement.getAttribute('data-marker');
+	const markerName = mapElement.getAttribute('data-marker-name');
+	
+	const location = { lat: latitude, lng: longitude };
+	const map = new google.maps.Map(mapElement, {
+	  zoom: 14,
+	  center: location
+	});
+	
+	new google.maps.Marker({
+	  position: location,
+	  map: map,
+	  title: markerName,
+	  icon: markerImage
+	});
+  }
